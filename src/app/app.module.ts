@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule, XSRFStrategy, CookieXSRFStrategy} from '@angular/http';
+import { AppComponent, AppInternalComponents  } from './app.component';
+import { MaterialModule } from '@angular/material';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
+import { AppRouterModule, RoutingInternalComponents } from './routing/app-router.module';
+import { HomeComponent } from './body/main-content/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,AppInternalComponents, RoutingInternalComponents, HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule, MaterialModule,
+    BrowserAnimationsModule, FlexLayoutModule, AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
