@@ -1,12 +1,14 @@
-<md-menu #appMenu="mdMenu" 
-          yPosition="below" 
-          [overlapTrigger]="false" 
-          >
-  <button md-menu-item > Setting </button>
-  <button md-menu-item > Logout </button>
-  <button md-menu-item > Contact</button>
+<md-menu  #appMenu="mdMenu" 
+yPosition="below" 
+[overlapTrigger]="false" 
+>
+<button md-menu-item > Setting </button>
+<button md-menu-item > Logout </button>
+<button md-menu-item > Contact</button>
 </md-menu>
-<button md-icon-button  
+<span fxFlex></span>
+<button md-icon-button class="toolbar" 
         [mdMenuTriggerFor]="appMenu">
   <md-icon>more_vert</md-icon>
 </button>
+<span fxFlex></span>

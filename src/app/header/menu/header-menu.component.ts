@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'header-menu',
   templateUrl: './header-menu.component.html',
-  providers:[AppService]
+  providers:[AppService],
+  styleUrls: ['../header.component.css']
 })
 export class HeaderMenuComponent {
 

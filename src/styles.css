@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+md-toolbar-row {
+  justify-content: space-between;
+}
+
+md-toolbar {
+  min-height: 56px !important;
+}
+md-toolbar md-toolbar-row {
+  height: 56px !important;
+}
+
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
