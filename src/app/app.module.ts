@@ -8,9 +8,10 @@ import { HomeComponent } from './body/main-content/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './body/login/login.component';
+import { RegisterComponent } from './body/register/register.component';
 @NgModule({
   declarations: [
-    AppComponent,AppInternalComponents, RoutingInternalComponents, HomeComponent, LoginComponent
+    AppComponent,AppInternalComponents, RoutingInternalComponents, HomeComponent, LoginComponent, RegisterComponent
   ],
   imports: [
     BrowserModule, HttpModule, MaterialModule,
