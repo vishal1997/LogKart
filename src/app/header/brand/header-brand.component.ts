@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'header-brand',
   templateUrl: './header-brand.component.html',
-  providers:[AppService]
+  providers:[AppService],
+  styleUrls: ['../header.component.css']
 })
 export class HeaderBrandComponent{
 

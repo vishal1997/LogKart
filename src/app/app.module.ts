@@ -7,9 +7,10 @@ import { AppRouterModule, RoutingInternalComponents } from './routing/app-router
 import { HomeComponent } from './body/main-content/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginComponent } from './body/login/login.component';
 @NgModule({
   declarations: [
-    AppComponent,AppInternalComponents, RoutingInternalComponents, HomeComponent
+    AppComponent,AppInternalComponents, RoutingInternalComponents, HomeComponent, LoginComponent
   ],
   imports: [
     BrowserModule, HttpModule, MaterialModule,

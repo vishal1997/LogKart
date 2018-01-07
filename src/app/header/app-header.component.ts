@@ -4,6 +4,7 @@ import { HeaderBrandComponent } from './brand/header-brand.component';
 @Component({
   selector: 'app-header',
   templateUrl: './app-header.component.html',
+  styleUrls: ['./header.component.css']
 })
 export class AppHeaderComponent {
 
