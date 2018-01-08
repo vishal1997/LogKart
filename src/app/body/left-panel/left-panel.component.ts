@@ -14,4 +14,8 @@ export class LeftPanelComponent implements OnInit {
   
   ngOnInit() {
   }
+
+  home() {
+    this.router.navigateByUrl("home");
+  }
 }

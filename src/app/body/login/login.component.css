@@ -4,4 +4,6 @@
     height: calc(100vh - 4em - 64px);
   }
   
-  
+  .right{
+         margin:-420px -500px 100px 600px;
+  }
