@@ -2,9 +2,9 @@
 yPosition="below" 
 [overlapTrigger]="false" 
 >
-<button md-menu-item > Setting </button>
-<button md-menu-item > Logout </button>
-<button md-menu-item > Contact</button>
+<button md-menu-item (click)= "setting();"> Setting </button>
+<button md-menu-item (click)= "logout();"> Logout </button>
+<button md-menu-item (click)= "contact();"> Contact</button>
 </md-menu>
 <span fxFlex></span>
 <button md-icon-button class="toolbar" 

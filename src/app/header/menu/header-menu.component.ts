@@ -9,5 +9,17 @@ import { Router } from '@angular/router';
 })
 export class HeaderMenuComponent {
 
-  constructor() {}
+  constructor(private router:Router) {}
+
+  setting() {
+    this.router.navigateByUrl("setting");
+  }
+
+  contact() {
+    this.router.navigateByUrl("contactus");
+  }
+
+  logout() {
+    this.router.navigateByUrl("login");
+  }
 }
