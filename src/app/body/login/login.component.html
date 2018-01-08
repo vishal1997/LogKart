@@ -1,27 +1,39 @@
-<app-register></app-register>
-<div class="form-wrapper right">
-<div>
-      <div>
-  
-      <form><br>
-        <md-input-container>
-          <input mdInput type="text" name="username" >
-          <md-placeholder>
-            Username
-          </md-placeholder>
-        </md-input-container><br><br>
-        <md-input-container>
-          <input mdInput type="password" name="password" >
-          <md-placeholder >
-           Password
-          </md-placeholder>
-        </md-input-container><br><br>
-        <button md-raised-button color="warn" type="submit" name="action">LOGIN</button><br><br>
-        <span id="err"><small>{{errorMsg}}</small></span>
-        <md-slide-toggle color="primary"><small>Remember me!</small></md-slide-toggle>
-      </form >
-    </div>
-  </div>
-</div>
+<md-card>
+
+
+  <md-tab-group fxFlex="100" scroll="false">
+      <md-tab label="login">
+        <div>
+          <div>
+              <div>
+                <form><br>
+                  <md-input-container>
+                    <input mdInput type="text" name="username" >
+                    <md-placeholder>
+                      Username
+                    </md-placeholder>
+                  </md-input-container><br><br>
+                  <md-input-container>
+                    <input mdInput type="password" name="password" >
+                    <md-placeholder >
+                      Password
+                    </md-placeholder>
+                  </md-input-container><br><br>
+                  <button md-raised-button color="warn" type="submit" name="action">LOGIN</button><br><br>
+                  <span id="err"><small>{{errorMsg}}</small></span>
+                  <md-slide-toggle color="primary"><small>Remember me!</small></md-slide-toggle>
+                </form >
+              </div>
+            </div>
+        </div>
+      </md-tab>
+      <md-tab label="Register">
+        <app-register></app-register>
+      </md-tab>
+  </md-tab-group>
+
+</md-card>
+
+
 
 
