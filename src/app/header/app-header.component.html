@@ -1,9 +1,18 @@
 <md-toolbar  class=" nav-tool">
   
 <header-brand></header-brand>
-
+<span class="toolbar">LogKart</span>
   <!-- This fills the remaining space of the current row -->
- 
-  <span class="toolbar">LogKart</span>
+  <button md-button class="toolbar">Home</button>
+  <button  class="toolbar" md-button [mdMenuTriggerFor]="menu">Services</button>
+  <md-menu [overlapTrigger]="false" #menu="mdMenu">
+    <button md-menu-item>Service1</button>
+    <button md-menu-item>Service2</button>
+  </md-menu>
+  <button md-button class="toolbar">Track</button>
+  <button md-button class="toolbar">Profile</button>
+  <button md-button class="toolbar">Set</button>
+  <button md-button class="toolbar">Login</button>
+  
   <header-menu></header-menu>
 </md-toolbar>
